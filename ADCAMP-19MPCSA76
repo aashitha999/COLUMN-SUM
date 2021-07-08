@@ -1,0 +1,38 @@
+ public class Columnsum
+{
+    public static void main(String args[])
+    
+{
+int a[][]= { {1,2,3},{4,5,6},{7,8,9} };
+for(int i=0;i<3;i++)
+{
+    for(j=0;j<3;j++)
+    
+{
+    System.out.print(a[i][j] + " ");
+    
+}
+System.out.print();
+}
+
+
+for(int i=0; i<3 ;i++)
+{
+    int sum=0;
+    for(int j=0;j<3;j++)
+    {
+        
+    sum+=a[j][i];
+    }
+
+    System.out.println("Sum of column" + (i+1) + " is:" +sum);
+}
+}
+}
+OUTPUT
+1 2 3
+4 5 6 
+7 8 9
+Sum of column is: 12
+Sum of column is:15
+Sum of column is:18
